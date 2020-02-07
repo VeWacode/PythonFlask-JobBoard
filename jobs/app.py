@@ -18,7 +18,7 @@ def execute_sql(sql, values=(), commuit=False, single=False):
     if commit == true:
         results = connection.commit()
     else:
-        results = cursor.fetchone if single esle cursor.fetchall()
+        results = cursor.fetchone() if single esle cursor.fetchall()
     
     cursor.close()
     return results
